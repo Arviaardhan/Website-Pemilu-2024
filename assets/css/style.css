@@ -21,6 +21,7 @@
    */
 
   --violet-blue-crayola: hsla(234, 50%, 64%, 1);
+  --primary-color: hsla(0, 100%, 45%, 1);
   --dark-cornflower-blue_a7: hsla(214, 88%, 27%, 0.07);
   --white: hsla(0, 0%, 100%, 1);
   --white_a3: hsla(0, 0%, 100%, 0.03);
@@ -41,7 +42,7 @@
    * typography
    */
 
-  --ff-manrope: 'Manrope', sans-serif;
+  --ff-manrope: 'Poppins', sans-serif;
 
   --fs-1: calc(2.7rem + 1.38vw);
   --fs-2: calc(2.6rem + .66vw);
@@ -244,7 +245,7 @@ body.nav-active { overflow: hidden; }
 .section-subtitle {
   font-size: var(--fs-7);
   text-transform: uppercase;
-  color: var(--violet-blue-crayola);
+  color: var(--primary-color);
   font-weight: var(--fw-700);
   margin-block-end: 16px;
 }
@@ -495,7 +496,7 @@ body.nav-active { overflow: hidden; }
 .service-card .card-icon {
   width: 60px;
   height: 60px;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--primary-color);
   display: grid;
   place-items: center;
   color: var(--white);
@@ -514,7 +515,7 @@ body.nav-active { overflow: hidden; }
   align-items: center;
   gap: 4px;
   margin-block-start: 10px;
-  color: var(--violet-blue-crayola);
+  color: var(--primary-color);
   font-weight: var(--fw-700);
   transition: var(--transition-1);
 }
@@ -546,7 +547,7 @@ body.nav-active { overflow: hidden; }
 
 .accordion-btn ion-icon {
   font-size: 1.5rem;
-  color: var(--blue-crayola);
+  color: var(--primary-color);
   transition: var(--transition-1);
 }
 
@@ -557,7 +558,7 @@ body.nav-active { overflow: hidden; }
 .accordion-btn .span { transition: var(--transition-1); }
 
 .accordion-btn:is(:hover, :focus-visible) .span,
-.accordion-card.expanded .accordion-btn .span { color: var(--violet-blue-crayola); }
+.accordion-card.expanded .accordion-btn .span { color: var(--primary-color); }
 
 .accordion-content {
   padding-inline-start: 24px;
