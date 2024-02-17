@@ -355,8 +355,18 @@ body.nav-active { overflow: hidden; }
 
 .navbar-link {
   font-weight: var(--fw-700);
-  padding-block: 6px;
+  padding-block: 10px;
 }
+
+/* CSS */
+/* Menambahkan padding atas untuk mengkompensasi fixed navbar */
+:target:before {
+  content: "";
+  display: block;
+  height: 130px; 
+  margin: -130px 0 0; 
+}
+
 
 .contact-link { transition: var(--transition-1); }
 
@@ -653,7 +663,7 @@ body.nav-active { overflow: hidden; }
 
 .project-card .card-title { transition: var(--transition-1); }
 
-.project-card .card-title:is(:hover, :focus-visible) { color: var(--violet-blue-crayola); }
+.project-card .card-title:is(:hover, :focus-visible) { color: var(--primary-color); }
 
 .project-card .card-text { margin-block: 16px 20px; }
 
@@ -942,7 +952,7 @@ body.nav-active { overflow: hidden; }
 
   .header.active .navbar-link:is(:hover, :focus-visible) {
     opacity: 1;
-    color: var(--violet-blue-crayola);
+    color: var(--primary-color);
   }
 
   .header .btn { margin-inline-start: 0; }
